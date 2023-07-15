@@ -1,0 +1,17 @@
+/* styles */
+.hydrator-object:empty {
+    width: auto;
+    height: 1em;
+    line-height: 1em;
+  }
+  .hydrator-object:empty::after {
+    margin:auto;
+    right:0;
+    left:0;
+    position: relative;
+    padding-left:1em;
+    padding-right:1em;
+    font-size:14px;
+    background:none;
+    content: attr(data-object);
+  }
